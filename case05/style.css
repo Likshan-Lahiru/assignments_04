@@ -1,0 +1,71 @@
+main{
+    width: 800px;
+    height: 550px;
+    border: 3px solid red;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+
+
+
+}
+section{
+    display: flex;
+
+    animation-name: animi;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+section>div{
+    width: 800px;
+    height: 550px;
+    background-color: yellow;
+    border: 2px solid red;
+}
+section>div:first-child{
+    background-image: url("../file/assests/slide1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+section>div:nth-child(2){
+    background-image: url("../file/assests/slide2.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section>div:nth-child(3){
+    background-image: url("../file/assests/slide3.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section>div:nth-child(4){
+    background-image: url("../file/assests/slide4.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@keyframes animi {
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(-25%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    75%{
+        transform: translateX(-75%);
+    }
+}
